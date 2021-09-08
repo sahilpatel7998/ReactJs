@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import add, { sub, mul, div } from './cal';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div>
+        <h1> the total of two no. is - {add(20, 30)} </h1>
+        <h1> the substraction of two no is - {sub(20, 30)}</h1>
+        <h1> the mul of two no is - {mul(20, 30)}</h1>
+        <h1> the division of two no is - {div(20, 30)}</h1>
+      </div>
+    </>
+  )
 }
-
 export default App;
