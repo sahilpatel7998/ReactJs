@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+
+
+const App = () => {
+
+  const state = useState();            //useState == Array [ undefined, dispatchAction() ]
+  // console.log(state);
+
+  const [count, setCount] = useState(5)
+
+  // let count = 1;
+
+  const getCount = () => {
+    setCount(count + 1);
+    // console.log("clicked" + " " + count++);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <div className ="number">
+      <h1>{count}</h1>
+      <br></br>
+      <button id = "btn" onClick={getCount}>Click Here!</button>
+      </div>
+    </>
+  )
 }
 
 export default App;
