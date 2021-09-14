@@ -1,13 +1,101 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: cornsilk; */
+  font-family: 'Courier New', Courier, monospace;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.text{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(171, 163, 223);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text2{
+  color: azure;
+  background: transparent;
+  text-shadow: 0px 3px 4px black;
+
+}
+input{
+  width: 50%;
+  padding: 10px 20px;
+  margin: 20px ;
+  text-align: center;
+  border:1px outset azure;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+
+}
+#btn{
+  line-height: 25px;
+  padding: 10px 10px ;
+  background:rgb(19, 37, 19);
+  color: azure;
+  border: 1px solid aliceblue;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px 10px;
+}
+
+.main_div{
+  width : 100%;
+  height : 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: azure;
+}
+
+.center_div{
+  width : 300px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow:   rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;;
+  background-color: whitesmoke;
+  border-radius: 15px;
+}
+.text_number{
+  padding: 10px 0 ;
+  color: brown;
+  background-color: cadetblue;
+  width: 100%;
+  margin: 15px;
+  /* height: 100vh; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 50px;
+  /* background: transparent; */
+  transform-origin: 50% 50%;
+  transition: transform 5s linear;
+}
+.text_number:hover{
+  transform: scale(2) rotate(0.1deg);
+
+}
+
+
+.btn_div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#btn:hover{
+  background-color:rgb(115, 196, 115) ;
 }
