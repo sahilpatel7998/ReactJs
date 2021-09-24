@@ -18,10 +18,13 @@
 
   input{
     /* text-align: center; */
-    margin-top : 10px;
-    padding : 10px 20px ;
+    margin-top : 12px;
+    padding : 5px 20px ;
     font-size: 1.2rem;
-    width: 440px;
+    width: 550px;
+    /* border-radius: 5%; */
+    /* border: 1px red; */
+
     /* margin-top: 3px; */
     /* border-radius: 5px; */
   }
@@ -38,13 +41,13 @@
   }
 
   .banner{
-      position: fixed;
+      position: absolute;
       width : 100%;
       background-image: url("https://demo.vendure.io:443/assets/preview/40/abel-y-costa-716024-unsplash__preview.jpg");
       background-position:0vmax;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 600px;
+      height: 710px;
  
   }
 
@@ -55,14 +58,14 @@
   } */
 .heading{
 
-    margin-top: 380px;
+    margin-top: 480px;
     height: 150px;
     width: 100%;
    
 
 }
 
-h1{
+#txt{
     font-size: 190px;
     margin : auto;
     opacity: 0.5;
@@ -70,6 +73,8 @@ h1{
 }
 a{
     text-decoration: none;
+    color: rgb(2, 173, 165);
+
 }
 .header_menu{
     display: flex;
@@ -81,8 +86,8 @@ flex: wrap;
 /* display: block; */
 padding-left: 380px;
 }
+
 li{
     margin: 20px;
 }
-  
   

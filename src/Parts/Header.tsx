@@ -1,12 +1,14 @@
 import React from "react";
 import './header.css';
 import Main from './Main';
+import logo from "../images/logo.png"
 
 const Header = () => {
     return (<>
         <div className="Header">
             <div className="Header_container">
-                <img src="https://demo.vendure.io/storefront/assets/cube-logo-line-icon-nostroke.png"></img>
+                <img src={logo}></img>
+
                 <div className="input">
                     <input type="text" placeholder="Search...." />
                     <button className="btn">Sign in</button>
@@ -21,7 +23,7 @@ const Header = () => {
         </div>
 
 
-        <Main></Main>
+        <Main/>
     </>
     )
 }
