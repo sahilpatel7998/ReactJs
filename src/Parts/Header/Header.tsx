@@ -2,12 +2,17 @@ import React from "react";
 import './header.css';
 import Main from '../Main/Main';
 import logo from "../../images/logo.png"
-import { Link } from "react-router-dom";
-import ElectronicsProducts from "./ElectronicsProducts";
-import Sports from "./Sports&Outdoor";
-import Home from "./Home&Garden";
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch
+} from 'react-router-dom';
+import ElectronicsProducts from "./menu/ElectronicsProducts";
+import Sports from "./menu/Sports&Outdoor";
+import Home from "./menu/Home&Garden";
 
-const Menu = () => {
+const Header = () => {
     return (<>
         <div className="Header">
             <div className="Header_container">
@@ -20,16 +25,22 @@ const Menu = () => {
             </div>
         </div>
         <div className="header_menu">
-            <li><Link to = "/ElectronicsProducts" component = {ElectronicsProducts}>Electronics</Link></li>
-            <li> <Link to = "/Sports&Outdoors" component = {Sports}>Home & Garden</Link></li>
-            <li> <Link to ="/Home&garden" component = {Home}>Sports & outdors</Link></li>
+            {/* <Router> */}
+                <li><Link to="/ElectronicsProducts" >Electronics</Link></li>          
+                <li> <Link to="/Sports&Outdoors" >Sports & outdors</Link></li>
+                <li> <Link to="/Home&garden" >Home & Garden</Link></li>
+
+                {/* <Route path="/electronicsProducts" component={ElectronicsProducts} />
+                <Route path="/sports" component={Sports} />
+                <Route path="/home" component={Home} /> */}
+{/* 
+            </Router> */}
 
         </div>
 
-
-        <Main/>
+    
     </>
     )
 }
 
-export default Menu;
+export default Header;

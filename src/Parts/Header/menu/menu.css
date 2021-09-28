@@ -1,0 +1,29 @@
+.parent_div{
+    position: relative;
+    color: black;
+
+}
+.imageE1{
+    
+    
+    /* position: absolute; */
+}
+.parent_div{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: .6;
+    /* position: absolute; */
+    height: 40vh;
+ color: brown;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+.imgE_div{
+    background-image: url('https://demo.vendure.io/assets/preview/5b/jakob-owens-274337-unsplash__preview.jpg?w=1000&h=300');
+
+}
+.txtE{
+    color: #d4eefc;
+    opacity: .15;
+}
