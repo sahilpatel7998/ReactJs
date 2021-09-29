@@ -1,29 +1,112 @@
-.parent_div{
-    position: relative;
-    color: black;
-
-}
 .imageE1{
-    
-    
-    /* position: absolute; */
-}
-.parent_div{
     width: 100%;
-    margin: 0;
-    padding: 0;
-    opacity: .6;
-    /* position: absolute; */
     height: 40vh;
- color: brown;
-    background-size: cover;
-    background-blend-mode: luminosity;
 }
 .imgE_div{
-    background-image: url('https://demo.vendure.io/assets/preview/5b/jakob-owens-274337-unsplash__preview.jpg?w=1000&h=300');
+    position: relative;
+    background-color: #f8f9fa;
+    opacity: .20;
 
 }
-.txtE{
-    color: #d4eefc;
-    opacity: .15;
+.txtE {
+    position: absolute;
+    top: 8%;
+    display: flex;
+    margin-left: 20%;
+
+}
+.txtE p{
+    /* font-size: 1.2rem; */
+    display: flex;
+    top: 9%;
+    /* height: 30px; */
+}
+#elect{
+    position: absolute;
+    top: 9%;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 6rem;
+    margin-left: 20.5%;
+}
+.containerE{
+    width: 60%;
+    /* background-color: aqua; */
+    height: 1683px;
+    margin-left: 21%;
+    /* display: flex; */
+    /* float: left; */
+    
+}
+
+.filter_product{
+    float: left;
+    /* background-color: sandybrown; */
+    width: 17%;
+    padding: 0 1.5% 0 1.5%;
+    height: auto;
+    /* margin-top: 0; */
+}
+.label{
+    display: flex;
+    /* margin-right: 2%; */
+    padding: 10px;
+   color: #6c757d; 
+}
+.elect_image{
+    float: right;
+    height: auto;
+    width: 80%;
+    /* background-color: red; */
+    margin-top: 1%;
+}
+.cropped1{
+    width: 47%;
+    margin-right: 3%;
+     height:91px;
+     object-fit: cover;
+     opacity: .20;
+     background-color: #f8f9fa;
+
+
+
+}
+.cropped2{
+    width: 47%;
+    height:91px;
+    object-fit: cover;
+    /* object-position: 50% 50% ; */
+    opacity: .20;    
+    background-color: #f8f9fa;
+
+
+}
+#cmp_txt{
+    position: absolute;
+    font-weight: 300;
+    top: 47%;
+    margin-left: 2%;
+    color: #596e84;
+    font-size: 3.5rem;
+
+}
+#cnp_txt{
+    position: absolute;
+    font-weight: 300;
+    margin-left: 25%;
+    color: #596e84;
+    font-size: 3.4rem;
+    top: 47%;
+
+}
+.elect_image2{
+    position: absolute;
+    width: 48%;
+    height: 1580px;
+    /* background-color: blueviolet; */
+    margin-left: 12%;
+    margin-top: 8.3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }

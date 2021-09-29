@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                     <div className="icons-1">
                         <div className="icon_text">
-                            <p>Subscribe to our mailing list for exclusive<button id="btn_2">Subscribe</button> news and offers!</p>
+                            <p id = "textF">Subscribe to our mailing list for exclusive<button id="btn_2">Subscribe</button> news and offers!</p>
                             <div className="icon_button"></div>
                         </div>
                     </div>

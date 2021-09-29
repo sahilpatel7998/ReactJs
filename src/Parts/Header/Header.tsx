@@ -19,7 +19,7 @@ const Header = () => {
                 <img src={logo}></img>
 
                 <div className="input">
-                    <input type="text" placeholder="Search...." />
+                    <input id = "search"type="text" placeholder="Search...." />
                     <button className="btn">Sign in</button>
                 </div>
             </div>
