@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./menu.css"
 import { Link } from "react-router-dom";
 import { FaFilter } from "react-icons/fa"
+// import Card from "../../../components/card";
+import Product from "../../../Api/menuApi";
+import MenuCard from "../../../components/ProductCard/ProductCard";
+import { ProductName } from "../../../components/ProductCard/ProductData";
 
 const ElectronicsProducts = () => {
+
+    const [productData, setProdData] = useState<ProductName[]>(Product)
+
+    const filterProduct = (category) = {
+        const updatedList = Product.filter((element) => {
+            return element.brand_name === category ;
+        });
+        setProdData (updatedList: any);
+    }
+
     return (<>
         <div className="parent_div">
             <div className="imgE_div">
@@ -31,15 +45,16 @@ const ElectronicsProducts = () => {
                                 <p>Category</p>
                                 <input type="checkbox" id="topping" name="topping"
                                     value="Paneer" />
-                                Paneer
+                                Computers
                                 <br />
                                 <input type="checkbox" id="topping" name="topping"
                                     value="Paneer" />
-                                Paneer
+                                Photo
                             </div>
                             <div>
                                 <p>Brand</p>
                                 <input type="checkbox" id="topping" name="topping"
+                                onChange = {() => filterProduct("Apple")}
                                     value="Paneer" />
                                 Apple
                                 <br />
@@ -94,7 +109,7 @@ const ElectronicsProducts = () => {
                             </div>
                         </div>
 
-
+                       
 
 
                     </div>
@@ -136,6 +151,10 @@ const ElectronicsProducts = () => {
 
                 </div>
             </div>
+        </div>
+        <div>
+            {/* <Card/> */}
+            <MenuCard productData = {productData}/>
         </div>
 
     </>
