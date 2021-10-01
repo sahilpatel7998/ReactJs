@@ -66,15 +66,15 @@ const Product = [{
     id : 10,
     image : "https://demo.vendure.io/assets/preview/7b/thomas-q-1229169-unsplash__preview.jpg?w=200&h=200",
     name : "Ethernet Cable",
-    brand_name: "",
-    price :11
+    brand_name: "Cable",
+    price :7.16
 },
 {
     id : 11,
     image : "https://demo.vendure.io/assets/preview/64/adam-birkett-239153-unsplash__preview.jpg?w=200&h=200",
     name : "USB Cabel",
-    brand_name: "",
-    price :11
+    brand_name: "Cable",
+    price :82.80
 },
 {
     id : 12,

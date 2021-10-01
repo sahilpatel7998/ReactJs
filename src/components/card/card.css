@@ -1,0 +1,25 @@
+.main_card_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 48%;
+    /* position: absolute; */
+    margin: 8% 0 0 12%;
+    grid-gap: 1%;
+    top: 50%;
+    height: 1683px;
+    /* background-color: burlywood; */
+}
+
+.card-media{
+    overflow: hidden;
+    /* width: 100%; */
+    opacity: .85;
+    transition: 0.2s;
+    
+
+}
+.card-media:hover{
+    opacity: 1;
+    scale: 1.1;
+    transform: scale(1.1);
+}
