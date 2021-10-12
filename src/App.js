@@ -9,11 +9,25 @@ import NotFound from './components/pages/NotFound';
 import AddUser from './components/Users/AddUser';
 import EditUser from './components/Users/EditUser';
 import User from './components/Users/User';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+import { useState } from 'react';
+import Counter from './components/Counter';
+import CounterContextProvider from './context/CounterContext';
+import Component1 from './components/Component1';
 
 function App() {
+  // const [name, setName] = useState("hello")
+
   return (
     <>
-      <Router>
+    <CounterContextProvider>
+    <h3><Counter/></h3>
+    <Component1/>
+    </CounterContextProvider>
+    {/* <ComponentA name = {name}/>
+    <ComponentB name = {name}/> */}
+      {/* <Router>
         <div className="App">
           <Navbar />
 
@@ -29,7 +43,7 @@ function App() {
 
 
         </div>
-      </Router>
+      </Router> */}
     </>
   );
 }

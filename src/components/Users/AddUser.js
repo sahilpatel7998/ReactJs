@@ -14,10 +14,10 @@ const AddUser = () => {
 
   const { name, username, email, phone, website } = user;
   const onInputChange = e => {
-    setUser({ ...user, [e.target.name]: e.target.value });
+    setUser({ ...user,[e.target.name]: e.target.value });
   };
 
-  const onSubmit = async e => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     await axios.post("http://localhost:3003/users", user);
     history.push("/");
